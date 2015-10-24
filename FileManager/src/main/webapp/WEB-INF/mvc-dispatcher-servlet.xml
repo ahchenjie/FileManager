@@ -65,10 +65,7 @@
     <beans:bean id="fileDAO" class="com.springapp.dao.FileDAO">
         <beans:property name="sessionFactory" ref="sessionFactory" />
     </beans:bean>
-    <!--<beans:bean id="personService" class="com.journaldev.spring.service.PersonServiceImpl">-->
-        <!--<beans:property name="personDAO" ref="personDAO"></beans:property>-->
-    <!--</beans:bean>-->
-
+  
     <tx:annotation-driven transaction-manager="transactionManager"/>
 
     <beans:bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
